@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrepICFES - Plataforma Educativa</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleContent(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>PrepICFES</h1>
+    <p>Formación de calidad para el futuro de Colombia</p>
+  </header>
+
+  <nav>
+    <a href="#problema">Problema</a>
+    <a href="#solucion">Solución</a>
+    <a href="#materias">Materias</a>
+    <a href="#mejora">Pasos para mejorar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="problema" class="section">
+    <h2>📉 El Problema</h2>
+    <p>
+      En Colombia, muchos estudiantes enfrentan dificultades al presentar el examen ICFES debido
+      a vacíos en su formación académica. La falta de recursos, estrategias de enseñanza actualizadas
+      y orientación adecuada reduce el desempeño promedio del país en educación.
+    </p>
+  </section>
+
+  <section id="solucion" class="section">
+    <h2>💡 Nuestra Solución</h2>
+    <p>
+      PrepICFES busca fortalecer el conocimiento de los estudiantes mediante recursos accesibles,
+      simulacros gratuitos y materiales diseñados según las áreas del examen. Nuestro objetivo
+      es que cada joven comprenda los temas fundamentales y llegue preparado, sin importar
+      su contexto educativo.
+    </p>
+  </section>
+
+  <section id="materias" class="section">
+    <h2>📘 Materias del ICFES</h2>
+    <p>Selecciona una materia para ver los temas recomendados:</p>
+
+    <button onclick="toggleContent('matematicas')">Matemáticas</button>
+    <div id="matematicas" style="display:none; margin-top:10px;">
+      <ul>
+        <li><strong>Básicas:</strong> Suma, resta, multiplicación y división.</li>
+        <li><strong>Intermedias:</strong> Fracciones, porcentajes y potencias.</li>
+        <li><strong>Secundaria:</strong> Álgebra, ecuaciones y geometría analítica.</li>
+        <li><strong>Consejo:</strong> Practica con ejercicios reales del ICFES para mejorar velocidad y precisión.</li>
+      </ul>
+    </div>
+
+    <button onclick="toggleContent('lectura')">Lectura Crítica</button>
+    <div id="lectura" style="display:none; margin-top:10px;">
+      <ul>
+        <li><strong>Comprensión:</strong> Identificación de ideas principales y secundarias.</li>
+        <li><strong>Interpretación:</strong> Reconocer el propósito del texto.</li>
+        <li><strong>Evaluación:</strong> Analizar argumentos y puntos de vista.</li>
+      </ul>
+    </div>
+
+    <button onclick="toggleContent('ciencias')">Ciencias Naturales</button>
+    <div id="ciencias" style="display:none; margin-top:10px;">
+      <ul>
+        <li>Biología: estructura celular, genética y ecosistemas.</li>
+        <li>Física: movimiento, energía y leyes básicas.</li>
+        <li>Química: reacciones, átomos y elementos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="mejora" class="section">
+    <h2>🚀 Pasos para mejorar el nivel académico</h2>
+    <ol>
+      <li>Diagnostica tus debilidades realizando un simulacro inicial.</li>
+      <li>Consulta los materiales recomendados en cada área.</li>
+      <li>Dedica al menos 1 hora diaria al estudio autónomo.</li>
+      <li>Participa en tutorías virtuales o grupos de estudio.</li>
+      <li>Motiva a tu colegio a usar metodologías actualizadas.</li>
+      <li>Evalúa tu progreso cada mes con nuevas pruebas.</li>
+    </ol>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>📞 Contáctanos</h2>
+    <p>¿Tienes ideas para mejorar la educación en Colombia? Escríbenos:</p>
+    <a href="mailto:contacto@prep-icfes.com" class="boton">Enviar correo</a>
+  </section>
+
+  <footer>
+    <p>© 2025 PrepICFES | Plataforma de apoyo educativo para estudiantes colombianos</p>
+  </footer>
+</body>
+  </html>
